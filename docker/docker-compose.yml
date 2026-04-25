@@ -1,0 +1,4 @@
+services:
+  teletrans:
+    image: teletrans:latest
+    restart: unless-stopped

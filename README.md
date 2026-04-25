@@ -46,3 +46,25 @@ python bot.py
 | `/quiz` | Startet ein Vokabelquiz (5 Fragen) |
 | `/stats` | Zeigt Anzahl gespeicherter Wörter |
 | `/cancel` | Bricht laufendes Quiz ab |
+
+
+## Building the docker container
+
+From the main directory run 
+
+```
+docker build -t teletrans:v99 -t teletrans:latest -f docker/Dockerfile .
+```
+
+Run the container 
+
+```
+docker run --rm -it teletrans:latest
+```
+
+Use the docker-compose.yml to run the app permanently
+
+```
+cd docker
+docker compose up -d
+```
