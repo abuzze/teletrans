@@ -4,7 +4,6 @@ WORKDIR /usr/src/app
 
 COPY ../*.py .
 COPY ../requirements.txt .
-COPY ../credentials.json .
 
 RUN pip install --no-cache-dir -r requirements.txt
 

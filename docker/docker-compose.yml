@@ -2,3 +2,7 @@ services:
   teletrans:
     image: teletrans:latest
     restart: unless-stopped
+    env_file:
+      - ./.env
+    volumes:
+      - ../credentials.json:/usr/src/app/credentials.json
