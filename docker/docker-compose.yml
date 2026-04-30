@@ -6,3 +6,5 @@ services:
       - ./.env
     volumes:
       - ../credentials.json:/usr/src/app/credentials.json
+    logging:
+      driver: none
